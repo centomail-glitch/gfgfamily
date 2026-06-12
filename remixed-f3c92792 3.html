@@ -778,10 +778,10 @@
 
     // Costruisce mailto con allegati (supporto limitato ai client email)
     // Per un invio reale si consiglia un backend o servizio come Cloudinary + EmailJS
-    const email = 'francesca.giorgio.2026@gmail.com'; // ← sostituire con email reale
+    const email = 'fgarau80@gmail.com';
     const subject = encodeURIComponent(`Foto matrimonio da ${sender}`);
     const body = encodeURIComponent(
-      `Ciao Francesca e Giorgio!\n\nVi invio ${files.length} foto del vostro matrimonio.\n\n${message ? 'Messaggio: ' + message + '\n\n' : ''}Con affetto,\n${sender}\n\n(Allega manualmente le foto nel client email)`
+      `Ciao!\n\nHo caricato ${files.length} foto del matrimonio di Francesca e Giorgio.\n\n👤 Nome: ${sender}\n${message ? '💬 Messaggio: ' + message + '\n' : ''}Con affetto,\n${sender}\n\n(Allega manualmente le foto nel client email)`
     );
 
     window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
